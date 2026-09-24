@@ -36,8 +36,6 @@
     --text-7xl--line-height: 1;
     --text-8xl: 6rem;
     --text-8xl--line-height: 1;
-    --text-9xl: 8rem;
-    --text-9xl--line-height: 1;
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
@@ -566,8 +564,8 @@
   .-mr-6 {
     margin-right: calc(var(--spacing) * -6);
   }
-  .-mb-3 {
-    margin-bottom: calc(var(--spacing) * -3);
+  .-mb-2 {
+    margin-bottom: calc(var(--spacing) * -2);
   }
   .mb-0 {
     margin-bottom: 0px;
@@ -593,14 +591,8 @@
   .mb-auto {
     margin-bottom: auto;
   }
-  .-ml-12 {
-    margin-left: calc(var(--spacing) * -12);
-  }
   .-ml-\[12vw\] {
     margin-left: calc(12vw * -1);
-  }
-  .ml-10 {
-    margin-left: calc(var(--spacing) * 10);
   }
   .ml-28 {
     margin-left: calc(var(--spacing) * 28);
@@ -1124,9 +1116,6 @@
   .pb-5 {
     padding-bottom: calc(var(--spacing) * 5);
   }
-  .pb-6 {
-    padding-bottom: calc(var(--spacing) * 6);
-  }
   .pb-8 {
     padding-bottom: calc(var(--spacing) * 8);
   }
@@ -1407,8 +1396,8 @@
       --tw-scale-z: 105%;
       scale: var(--tw-scale-x) var(--tw-scale-y);
     }
-    .group-hover\:scale-\[1\.48\]:is(:where(.group):hover *) {
-      scale: 1.48;
+    .group-hover\:scale-\[1\.42\]:is(:where(.group):hover *) {
+      scale: 1.42;
     }
     .group-hover\:-rotate-1:is(:where(.group):hover *) {
       rotate: calc(1deg * -1);
@@ -1488,8 +1477,8 @@
     .sm\:right-6 {
       right: calc(var(--spacing) * 6);
     }
-    .sm\:-mb-5 {
-      margin-bottom: calc(var(--spacing) * -5);
+    .sm\:-mb-4 {
+      margin-bottom: calc(var(--spacing) * -4);
     }
     .sm\:-ml-\[16vw\] {
       margin-left: calc(16vw * -1);
