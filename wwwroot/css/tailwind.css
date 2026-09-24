@@ -147,3 +147,45 @@
 .group:hover .group-hover\:rotate-y-180 {
   transform: rotateY(180deg);
 }
+
+@import "tailwindcss";
+
+@source "../../**/*.razor";
+
+@font-face {
+  font-family: "Inspiration";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://static.figma.com/font/Inspiration-Regular_1") format("woff2");
+}
+
+@font-face {
+  font-family: "Inika";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://static.figma.com/font/Inika-Regular_1") format("woff2");
+}
+
+@theme {
+  --font-inspiration: "Inspiration", cursive;
+  --font-inika: "Inika", serif;
+}
+
+/* Paper Shadows */
+.shadow-paper {
+  filter: drop-shadow(3px 4px 2px rgba(0, 0, 0, 0.15));
+}
+
+.shadow-paper-lg {
+  filter: drop-shadow(5px 8px 4px rgba(0, 0, 0, 0.22));
+}
+
+/* Tab Slide-Fade Animation */
+@keyframes tabFadeIn {
+  0% { opacity: 0; transform: translateX(12px) scale(0.98); }
+  100% { opacity: 1; transform: translateX(0) scale(1); }
+}
+
+.animate-tab-fade {
+  animation: tabFadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
