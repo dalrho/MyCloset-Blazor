@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+/* Scans all .razor files in your project */
+@source "../../**/*.razor";
+
+@font-face {
+  font-family: "Inspiration";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://static.figma.com/font/Inspiration-Regular_1") format("woff2");
+}
+
+@font-face {
+  font-family: "Inika";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://static.figma.com/font/Inika-Regular_1") format("woff2");
+}
+
+@theme {
+  --font-inspiration: "Inspiration", cursive;
+  --font-inika: "Inika", serif;
+}

@@ -1,23 +1,47 @@
 ﻿@page "/"
 
-<div class="hero-wrapper">
+<div class="relative w-full min-h-screen bg-[#FFF7F8] overflow-hidden">
 
-    <header class="nav-header">
-        <span class="logo">My Closet</span>
-        <nav class="nav-links">
-            <a href="/" class="nav-link active">home</a>
-            <a href="/about" class="nav-link">about</a>
-            <a href="/works" class="nav-link">works</a>
+    <!-- Header / Navbar -->
+    <header class="relative z-30 flex items-center justify-between px-8 py-5 md:px-16">
+        <span class="font-inspiration text-[36px] text-[#E092BB] leading-none select-none">
+            My Closet
+        </span>
+        <nav class="flex items-center gap-6">
+            <a href="/" class="font-inika text-[13px] text-[#E092BB] underline underline-offset-4 decoration-1">
+                home
+            </a>
+            <a href="/about" class="font-inika text-[13px] text-black hover:text-[#E092BB] transition-colors">
+                about
+            </a>
+            <a href="/works" class="font-inika text-[13px] text-black hover:text-[#E092BB] transition-colors">
+                works
+            </a>
         </nav>
     </header>
 
-    <div class="hero-text" aria-hidden="true">
-        <p class="name-angela">Angela </p>
-        <p class="name-jahziel">Jahziel</p>
+    <!-- Center Soft Pink Horizontal Banner Background -->
+    <div class="absolute top-[28%] left-0 w-full h-[40%] bg-[#FCE3ED] z-0 pointer-events-none"></div>
+
+    <!-- Soft Arch/Ellipse SVG Accent in Lower Background -->
+    <img src="assets/29930.svg" 
+         alt="" 
+         aria-hidden="true" 
+         class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[85%] max-w-[1000px] h-auto z-0 pointer-events-none opacity-80" />
+
+    <!-- Hero Text Layering -->
+    <div class="relative z-10 flex flex-col items-center pt-2 select-none pointer-events-none">
+        <p class="font-inspiration text-[90px] sm:text-[130px] md:text-[160px] text-[#E092BB] leading-none -mb-6 mr-12 md:mr-24">
+            Angela
+        </p>
+        <p class="font-inspiration text-[90px] sm:text-[130px] md:text-[160px] text-black leading-none ml-12 md:ml-24">
+            Jahziel
+        </p>
     </div>
 
-    <img src="assets/29930.svg" alt="" aria-hidden="true" class="ellipse-bg" />
-    <img src="assets/0e07d.png" alt="Paris cityscape illustration" class="cityscape" />
-    <img src="assets/a694a.png" alt="Fashion illustration" class="fashion-girl" />
+    <!-- Fashion Girl Illustration Layer -->
+    <img src="assets/a694a.png" 
+         alt="Fashion illustration" 
+         class="absolute bottom-0 left-[20%] sm:left-[24%] md:left-[28%] h-[78vh] max-h-[750px] w-auto z-20 object-contain pointer-events-none" />
 
 </div>
