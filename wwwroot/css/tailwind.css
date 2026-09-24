@@ -93,3 +93,57 @@
 .animate-sparkle {
   animation: sparkleGlow 2.5s ease-in-out infinite;
 }
+
+@import "tailwindcss";
+
+@source "../../**/*.razor";
+
+@font-face {
+  font-family: "Inspiration";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://static.figma.com/font/Inspiration-Regular_1") format("woff2");
+}
+
+@font-face {
+  font-family: "Inika";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://static.figma.com/font/Inika-Regular_1") format("woff2");
+}
+
+@theme {
+  --font-inspiration: "Inspiration", cursive;
+  --font-inika: "Inika", serif;
+}
+
+/* Warm Scrapbook Paper Background */
+.bg-works-texture {
+  background-color: #F3E5D8;
+  background-image: 
+    radial-gradient(rgba(255, 255, 255, 0.6) 1px, transparent 0),
+    radial-gradient(rgba(0, 0, 0, 0.015) 1px, transparent 0);
+  background-size: 8px 8px, 12px 12px;
+}
+
+/* 3D Flip Card Container Setup */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+.group:hover .group-hover\:rotate-y-180 {
+  transform: rotateY(180deg);
+}
