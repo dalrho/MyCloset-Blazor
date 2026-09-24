@@ -1396,8 +1396,8 @@
       --tw-scale-z: 105%;
       scale: var(--tw-scale-x) var(--tw-scale-y);
     }
-    .group-hover\:scale-\[1\.42\]:is(:where(.group):hover *) {
-      scale: 1.42;
+    .group-hover\:scale-\[1\.20\]:is(:where(.group):hover *) {
+      scale: 1.20;
     }
     .group-hover\:-rotate-1:is(:where(.group):hover *) {
       rotate: calc(1deg * -1);
