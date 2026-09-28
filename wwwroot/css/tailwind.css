@@ -189,3 +189,30 @@
 .animate-tab-fade {
   animation: tabFadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
+
+/* Green Sage Background Texture for Review Page */
+.bg-review-texture {
+  background-color: #79A971;
+  background-image: 
+    radial-gradient(rgba(255, 255, 255, 0.4) 1px, transparent 0),
+    radial-gradient(rgba(0, 0, 0, 0.02) 1px, transparent 0);
+  background-size: 8px 8px, 12px 12px;
+}
+
+/* Darker Green Bottom Section Texture */
+.bg-review-dark-texture {
+  background-color: #4B6E44;
+  background-image: 
+    radial-gradient(rgba(255, 255, 255, 0.15) 1px, transparent 0);
+  background-size: 8px 8px;
+}
+
+/* Smooth Modal Backdrop Fade & Pop-up */
+@keyframes modalPopIn {
+  0% { opacity: 0; transform: scale(0.94) translateY(12px); }
+  100% { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+.animate-modal-pop {
+  animation: modalPopIn 0.28s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
